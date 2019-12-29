@@ -1,3 +1,5 @@
+// To understand just input and output of array.
+
 #include <bits/stdc++.h>
 using namespace std;
 int main()

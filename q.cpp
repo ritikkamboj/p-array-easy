@@ -1,14 +1,33 @@
-// To understand just input and output of array.
-
 #include <bits/stdc++.h>
 using namespace std;
 int main()
 {
-	int arr[10];
-	for(int i=0;i<10;i++)
-		cin>>arr[i];
-		for(int i=0;i<10;i++)
-			cout<<arr[i]<<" ";
+int find=0;
+int n, arr[n],x;
+cout<<"array size ?";
+cin>>n;
+
+for(int i=0;i<n;i++)
+	cin>>arr[i];
+	cout<<"element to be find from array";
+cin>>x;
+
+for(int i=0;i<n;i++)
+{
+	if(arr[i]==x)
+		find=1;
+		//break;
+		
+}	
+if(find==0)
+cout<<"no"<<endl;
+else
+{
+	cout<<"yes"<<endl;
+}
+
+
+
 
 
 

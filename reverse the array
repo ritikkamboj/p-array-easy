@@ -1,0 +1,26 @@
+// program to reverse the array
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+	int n, arr[n];
+	cin>>n;
+	for(int i=0;i<n;i++)
+	{
+		cin>>arr[i];
+	}
+//	cout<<"ok";
+	int f=0,e=n-1;
+	while(f<e)
+	{
+		int temp=arr[e];
+		arr[e]=arr[f];
+		arr[f]=temp;
+		f++;
+		e--;
+	}
+	for(int i=0;i<n;i++)
+	{
+		cout<<arr[i]<<" ";
+	}
+}

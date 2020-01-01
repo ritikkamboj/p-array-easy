@@ -1,0 +1,40 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+ void  jugaad(int arr[], int n)
+{
+    int temp[n];
+    int j=0;
+    for(int i=0;i<n;i++)
+    {
+        if(arr[i]>0)
+        temp[j++]=arr[i];
+    }
+    if(j==n||j==0)      /* yeh cheez koyi kaise sooch sakta hai bina dekhe */
+    {
+        return  ;
+        
+    }
+    for(int i=0;i<n;i++)
+    {
+        if(arr[i]<0)
+        temp[j++]=arr[i];
+    }
+    memcpy(arr,temp,sizeof(temp));
+     
+}
+
+
+int main()
+{
+    int arr[]={1,-1,2,-2,3,-3,4,-4,5,-5};
+    int n=sizeof(arr)/sizeof(arr[0]);
+    
+    jugaad(arr,n);
+    for(int i=0;i<n;i++)
+    {
+        cout<<arr[i]<<" ";
+    }
+    
+    
+}

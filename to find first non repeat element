@@ -1,0 +1,35 @@
+// to find first the non repeated elements in the given array
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+int arr[]={-1, 2 ,-1, 3 ,2 };
+int n=sizeof(arr)/sizeof(arr[0]);
+
+int i,j;
+for(i=0;i<n;i++)
+{
+	for(j=0;j<n;j++)
+	{
+		if(i!=j && arr[i]==arr[j])
+		break;
+
+		
+
+	}
+	if(j==n)
+	{
+	cout<<arr[i];
+	break;
+	}
+	//cout<<"every number is repeated ";
+//	if(i==n)
+//	cout<<"every number is repeated ";
+
+
+}
+if(i==n)
+	cout<<"every number is repeated ";
+
+
+}
